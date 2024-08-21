@@ -1,0 +1,14 @@
+@import url('../componentesCSS/dashboardComponente.css');
+@import url('../componentesCSS/formularioComponente.css');
+.contenedor{
+    width: 100%;    
+    height: auto;
+}
+
+.tableDiv > div {
+    width: 100%;
+}
+.width100{
+    width: 100%;
+}
+

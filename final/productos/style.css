@@ -1,0 +1,37 @@
+@import url('../componentesCSS/dashboardComponente.css');
+@import url('../componentesCSS/formularioComponente.css');
+@import url('../componentesCSS/tableComponentes.css');
+
+.contenedor{
+    width: 100%;
+    height: auto ;
+}
+.width100{
+    width: 100%;
+}
+
+/* Estilos para el combobox */
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Cambiar el color del borde y la sombra cuando el combobox está enfocado */
+.form-group select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Estilos para las opciones dentro del combobox */
+.form-group select option {
+    padding: 10px;
+    color: #333;
+}

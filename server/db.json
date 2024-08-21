@@ -1,0 +1,178 @@
+{
+  "rol": [
+    {
+      "id": "1",
+      "name": "VENDEDOR"
+    },
+    {
+      "id": "2",
+      "name": "ADMINISTRADOR"
+    }
+  ],
+  "usuario": [
+    {
+      "id": "1102548251",
+      "nombre": "Juan",
+      "apellido": "Olave",
+      "edad": "19",
+      "correo": "correo@correo.com",
+      "telefono": "3229126084",
+      "rol": "2",
+      "estado": "ACTIVO",
+      "contrasena": "123456"
+    }
+  ],
+  "reportes": [
+    {
+      "fechaReporte": "",
+      "fechaInicioReporte": "",
+      "fechaFinReporte": "",
+      "usuarioGenerador": "",
+      "tipoReporte": "",
+      "id": "0239"
+    }
+  ],
+  "proveedores": [
+    {
+      "id": "c7c1",
+      "nombre": "SPECIALIZED",
+      "contactoNombre": "Pepito Perez",
+      "correo": "correo@correo.com",
+      "telefono": "3229126084",
+      "userId": "c7c1"
+    },
+    {
+      "id": "5d55",
+      "nombre": "PIRINEOS",
+      "contactoNombre": "Jose Piojo",
+      "correo": "correo@correo.com",
+      "telefono": "3229126000",
+      "userId": "5d55"
+    }
+  ],
+  "producto": [
+    {
+      "id": "1",
+      "nombre": "RIN 27",
+      "precioVenta": "1200",
+      "precioCompra": "1000",
+      "stock": "10",
+      "categoria": "d7be",
+      "proveedor": "c7c1"
+    },
+    {
+      "id": "8c02",
+      "nombre": "CORAZA KENDA RIN 26",
+      "precioVenta": "2000",
+      "precioCompra": "1000",
+      "stock": 4,
+      "categoria": "7ec5",
+      "proveedor": "5d55"
+    },
+    {
+      "id": "d142",
+      "nombre": "CORAZA KENDA RIN 27",
+      "precioVenta": "2000",
+      "precioCompra": "1000",
+      "stock": 8,
+      "categoria": "7ec5",
+      "proveedor": "c7c1"
+    },
+    {
+      "id": "abbb",
+      "nombre": "RIN 26",
+      "precioVenta": "2000",
+      "precioCompra": "1000",
+      "stock": "10",
+      "categoria": "d7be",
+      "proveedor": "5d55"
+    },
+    {
+      "id": "f8b2",
+      "nombre": "RIN 29",
+      "precioVenta": "1200",
+      "precioCompra": "1000",
+      "stock": 9,
+      "categoria": "d7be",
+      "proveedor": "5d55"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "idCliente": "1102548251",
+      "idUsuario": "1102548251",
+      "fechaPedido": "2024/08/05",
+      "total": "1000",
+      "tipoPedido": "Venta",
+      "manoObra": "0",
+      "fechaEntregaPedido": "0000/00/00",
+      "descripcion": ""
+    },
+    {
+      "id": "4e1e",
+      "idCliente": "1102548251",
+      "idUsuario": "1102548251",
+      "fechaPedido": "2024-08-21",
+      "total": "2380.00",
+      "tipoPedido": "Venta"
+    },
+    {
+      "id": "73d4",
+      "idCliente": "7569823",
+      "idUsuario": "1102548251",
+      "fechaPedido": "2024-08-21",
+      "total": "1428.00",
+      "tipoPedido": "Reparacion",
+      "manoObra": "30000",
+      "fechaEntregaPedido": null,
+      "descripcion": "Cambio de rin delantero de la bicicleta  --  30000"
+    }
+  ],
+  "detallePedidos": [
+    {
+      "id": "1",
+      "idPedido": "1",
+      "idProducto": "1",
+      "cantidad": "1",
+      "precioSinIva": "100",
+      "precioConIva": "1000",
+      "precioIva": "100",
+      "porcentajeIva": "5"
+    },
+    {
+      "id": "5748",
+      "idPedido": "4e1e",
+      "idProducto": "8c02",
+      "cantidad": 1,
+      "precioSinIva": 2000,
+      "precioConIva": 2380,
+      "precioIva": 380,
+      "porcentajeIva": 19
+    },
+    {
+      "id": "fb9b",
+      "idPedido": "73d4",
+      "idProducto": "f8b2",
+      "cantidad": 1,
+      "precioSinIva": 1200,
+      "precioConIva": 1428,
+      "precioIva": 228,
+      "porcentajeIva": 19
+    }
+  ],
+  "categorias": [
+    {
+      "id": "7ec5",
+      "nombre": "LLANTA "
+    },
+    {
+      "id": "d7be",
+      "nombre": "RIN ALUMINIO"
+    },
+    {
+      "id": "0237",
+      "nombre": "NEUMATICO "
+    }
+  ]
+}

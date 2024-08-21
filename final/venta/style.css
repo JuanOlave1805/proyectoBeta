@@ -1,0 +1,97 @@
+@import url('../componentesCSS/dashboardComponente.css');
+@import url('../componentesCSS/tableComponentes.css');
+@import url('../componentesCSS/formularioComponente.css');
+
+html{
+    font-family: "Oswald", sans-serif;
+}
+
+/* Estilos para el combobox */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Cambiar el color del borde y la sombra cuando el combobox está enfocado */
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Estilos para las opciones dentro del combobox */
+select > option {
+    padding: 10px;
+    color: #333;
+}
+.articleTable {
+    height: 140px;
+    display: flex;
+    align-items: start;
+    gap: 20px; /* Ajusta el gap para que el contenido no se solape */
+    overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+}
+
+.articleTable > table {
+    width: 100%;
+    border-collapse: collapse; /* Asegura que no haya espacios entre las celdas de la tabla */
+    table-layout: fixed; /* Fija el ancho de las columnas para mantener el ancho */
+}
+
+.articleTable thead {
+    display: table-header-group; /* Mantiene el encabezado visible en el scroll */
+}
+
+.articleTable tbody {
+    display: block; /* Permite el desplazamiento vertical */
+    height: 80px; /* Ajusta la altura para que el tbody tenga un área de desplazamiento específica */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    width: 600%; /* Asegura que el tbody ocupe todo el ancho de la tabla */
+}
+
+.tbody--auto tbody {
+    height: 300px;
+    width: 1000%;
+}
+
+/* Asegura que las filas del tbody se alineen correctamente */
+.articleTable tbody tr {
+    display: table; /* Asegura que las filas se comporten como tablas */
+    width: 100%; /* Asegura que las filas ocupen todo el ancho del tbody */
+    table-layout: fixed; /* Fija el ancho de las columnas en las filas del tbody */
+}
+
+/* Asegura que las celdas del thead y tbody tengan el mismo tamaño */
+.articleTable th, .articleTable td {
+    padding: 8px; /* Añade relleno a las celdas de la tabla */
+    border: 1px solid #ddd; /* Añade un borde a las celdas */
+    text-align: left;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+/* Oculta la barra de desplazamiento en Chrome, Safari y Edge */
+.articleTable tbody::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Hace que la barra de desplazamiento sea invisible */
+}
+
+.articleTable tbody {
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+.articleTable--350px{
+    height: 350px;
+}
+
+.botonera--Dos{
+    display: flex;
+    gap: 10px;
+}

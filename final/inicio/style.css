@@ -1,0 +1,161 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('../componentesCSS/btncomponentes.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-primary: #000000;
+    --white-primary: #ffffff;
+}
+
+html {
+    background: var(--black-primary);
+    color: var(--white-primary);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: var(--white-primary);
+}
+
+main > article {
+    height: 100%;
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    color: var(--white-primary);
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: var(--white-primary);
+}
+
+form {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.formDiv > label {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+}
+
+.formDiv > input {
+    color: var(--white-primary);
+    background: transparent;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid var(--white-primary);
+    outline: none;
+}
+
+.formDiv > input:focus {
+    border-bottom: 2px solid var(--white-primary);
+}
+
+.formButton {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+
+
+div > img {
+    width: 30vw;
+}
+
+
+/* Estilos para pantallas de tableta */
+@media (max-width: 1023px){
+	main{
+		height: auto;
+	}
+    main > article {
+		margin-top: 100px;
+        flex-direction: column-reverse;
+		width: 100%;
+    }
+    
+	article > section {
+		width: 70%;
+		height: auto;
+	}
+
+    form {
+        width: 100%;
+		height: 400px;
+    }
+    
+    div > img {
+		display: none;
+    }
+    
+    .btnPrimary {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* Estilos para pantallas de móvil */
+@media (max-width: 767px) {	
+    h1 {
+        font-size: 2.2rem;
+		width: 90%;
+		text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        text-align: center;
+		width: 90%;
+    }
+
+    form {
+        width: 100%; 
+		height: 300px;
+    }
+    
+    .formDiv {
+        width: 100%;
+    }
+    
+    .btnPrimary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

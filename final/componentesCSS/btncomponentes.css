@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+	--black-primary: #000000;
+	--white-primary: #ffffff;
+    --morado: #8e5ae5;
+    --moradoHover: #723bc9;
+    --celeste: #8ad2f1;
+    --celesteHover: #42b4e5;
+    --rojo: #ff9999;
+    --rojoHover: #f18181;
+}
+
+html{
+    font-size: 14px;
+}
+
+.btnPrimary {
+    color: var(--black-primary);
+    background: var(--white-primary);
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+    transition: border-color 0.3s;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+}
+
+.btnPrimary:hover {
+    background: var(--black-primary);
+    color: var(--white-primary);
+    border-color: var(--white-primary) 1px solid;
+}
+
+.btnPrimaryUsado {
+    color: var(--white-primary);
+    background: var(--black-primary);
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--white-primary);
+    transition: background-color 0.3s, color 0.3s;
+    transition: border-color 0.3s;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+}
+
+.btnPrimaryUsado:hover {
+    background: var(--white-primary);
+    color: var(--black-primary);
+    border-color: transparent 1px solid;
+}
+
+.btnSinEtiqueta{
+    text-decoration: none;
+}
+.btnMorado{
+    background-color: var(--morado);
+}
+.btnMorado:hover{
+    background-color: var(--moradoHover);
+}
+.btnCeleste{
+    background-color: var(--celeste);
+}
+.btnCeleste:hover{
+    background-color: var(--celesteHover);
+}
+
+.btnRojo{
+    background-color: var(--rojo);
+}
+
+.btnRojo:hover{
+    background-color: var(--rojoHover);
+}
+
+/* Estilos para pantallas de tableta */
+@media (max-width: 1023px){
+    .btnPrimary {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* Estilos para pantallas de móvil */
+@media (max-width: 767px) {	
+    .btnPrimary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 430px) {	
+    .btnPrimary {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 370px) {	
+    .btnPrimary {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}

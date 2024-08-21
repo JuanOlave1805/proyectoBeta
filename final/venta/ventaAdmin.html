@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Venta BIKE LIFE</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Imagenes/logo.png" alt="" class="imgLogo">
+            <h2>BIKE LIFE</h2>
+            <!-- Icono de menú hamburguesa -->
+            <div id="menuIcon" class="menu-icon">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <aside id="botonera">
+                <div>
+                    <a href="ventaAdmin.html" class="btnSinEtiqueta btnPrimaryUsado">Ventas</a>
+                    <a href="../reparacion/reparacionAdmin.html" class="btnPrimary btnSinEtiqueta">Reparaciones</a>
+                    <a href="../productos/productosAdmin.html" class="btnPrimary btnSinEtiqueta">Productos</a>
+                    <a href="../usuarios/usuariosAdmin.html" class="btnPrimary btnSinEtiqueta">Usuarios</a>
+                    <a href="../proveedores/proveedoresAdmin.html" class="btnPrimary btnSinEtiqueta">Proveedores</a>
+                </div>
+                <div>
+                    <a href="../perfil/perfilAdmin.html" class="btnPrimary btnSinEtiqueta">Perfil</a>
+                </div>
+            </aside>
+            <section class="sectionTable">
+                <article>
+                    <div>
+                        <h2>Ventas Admin</h2>
+                    </div>
+                    <div>
+                        <a href="" class="btnPrimary btnSinEtiqueta btnMorado">Reportes</a>
+                        <a href="ventaAgregarAdmin.html" class="btnPrimary btnSinEtiqueta btnCeleste">Agregar</a>
+                    </div>
+                </article>
+                <table class="table" id="tableVentas"> 
+                    <thead class="tableHead">
+                        <th class="">Fecha Venta</th>
+                        <th class="">Identificacion Cliente</th>
+                        <th class="">Identificacion Usuario</th>
+                        <th class="">Total Venta</th>
+                    </thead>
+                </table>
+            </section>
+        </article>
+    </main> 
+    <script src="app.js" type="module"></script>
+</body>
+</html>

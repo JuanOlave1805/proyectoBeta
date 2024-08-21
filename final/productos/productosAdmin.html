@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Productos BIKE LIFE</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Imagenes/logo.png" alt="" class="imgLogo">
+            <h2>BIKE LIFE</h2>
+            <!-- Icono de menú hamburguesa -->
+            <div id="menuIcon" class="menu-icon">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <aside id="botonera">
+                <div>
+                    <a href="../venta/ventaAdmin.html" class="btnSinEtiqueta btnPrimary">Ventas</a>
+                    <a href="../reparacion/reparacionAdmin.html" class="btnPrimary btnSinEtiqueta">Reparaciones</a>
+                    <a href="productosAdmin.html" class="btnPrimary btnSinEtiqueta btnPrimaryUsado">Productos</a>
+                    <a href="../usuarios/usuariosAdmin.html" class="btnPrimary btnSinEtiqueta">Usuarios</a>
+                    <a href="../proveedores/proveedoresAdmin.html" class="btnPrimary btnSinEtiqueta">Proveedores</a>
+                </div>
+                <div>
+                    <a href="../perfil/perfilAdmin.html" class="btnPrimary btnSinEtiqueta">Perfil</a>
+                </div>
+            </aside>
+            <section class="sectionTable">
+                <article>
+                    <div>
+                        <h2>Productos Admin</h2>
+                    </div>
+                    <div>
+                        <a href="categorias/categoriaAdmin.html" class="btnPrimary btnSinEtiqueta btnMorado">Categorias</a>
+                        <a href="productosAgregarAdmin.html" class="btnPrimary btnSinEtiqueta btnCeleste">Agregar</a>
+                        <a href="productosActualizarAdmin.html" class="btnPrimary btnSinEtiqueta btnCeleste">Actualizar</a>
+                    </div>
+                </article>
+                <table class="table" id="table"> 
+                    <thead class="tableHead">
+                        <th class="">Nombre</th>
+                        <th class="">Precio Venta</th>
+                        <th class="">Precio Compra</th>
+                        <th class="">Stock</th>
+                        <th class="">Categoria</th>
+                        <th class="">Proveedor</th>
+
+                    </thead>
+                </table>
+            </section>
+        </article>
+    </main> 
+    <script src="app.js" type="module"></script>
+</body>
+</html>

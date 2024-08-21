@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reparacion BIKE LIFE</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Imagenes/logo.png" alt="" class="imgLogo">
+            <h2>BIKE LIFE</h2>
+            <!-- Icono de menú hamburguesa -->
+            <div id="menuIcon" class="menu-icon">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <aside id="botonera">
+                <div>
+                    <a href="ventaAdmin.html" class="btnSinEtiqueta btnPrimaryUsado">Ventas</a>
+                    <a href="../reparacion/reparacionAdmin.html" class="btnPrimary btnSinEtiqueta">Reparaciones</a>
+                    <a href="../productos/productosAdmin.html" class="btnPrimary btnSinEtiqueta">Productos</a>
+                    <a href="../usuarios/usuariosAdmin.html" class="btnPrimary btnSinEtiqueta">Usuarios</a>
+                    <a href="../proveedores/proveedoresAdmin.html" class="btnPrimary btnSinEtiqueta">Proveedores</a>
+                </div>
+                <div>
+                    <a href="../perfil/perfilAdmin.html" class="btnPrimary btnSinEtiqueta">Perfil</a>
+                </div>
+            </aside>
+            <section class="sectionTable">
+                <article>
+                    <div>
+                        <h2>Agregar Reparacion</h2>
+                    </div>
+                    <div>
+                        <a href="" class="btnPrimary btnSinEtiqueta btnRojo">Cancelar</a>
+                    </div>
+                </article>
+                <article class="articleTable">
+                    <section>
+                        <select name="categoria" id="categoria">
+                            <option value="0">Seleccionar</option>
+                        </select>
+                    </section>
+                    <table class="table" id="table"> 
+                        <thead class="tableHead">
+                            <th class="">Identificación</th>
+                            <th class="">Nombre</th>
+                            <th class="">Precio</th>
+                            <th class="">Stock</th>
+                            <th class="">Categoria</th>
+                            <th class="">Proveedor</th>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </article>
+                <article>
+                    <div class="form-group">
+                        <label for="idProducto">ID Producto:</label>
+                        <input type="text" id="textProducto" name="idProducto" required disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Producto:</label>
+                        <input type="text" id="textNombre" name="nombre" required disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="text" id="textCantidad" name="cantidad">
+                    </div>
+                    <div class="botonera--Dos">
+                        <button class="btnCeleste btnPrimary" id="btnAgregarProducto">Agregar</button>
+                        <button class="btnRojo btnPrimary" id="btnRemoverProducto">Remover</button>
+                    </div>
+                </article>
+                <article class="articleTable articleTable--350px">
+                    <table class="tbody--auto " id="table2"> 
+                        <thead class="tableHead">
+                            <th class="">Identificación</th>
+                            <th class="">Nombre</th>
+                            <th class="">Precio Unidad</th>
+                            <th class="">Cantidad</th>
+                            <th class="">Categoria</th>
+                            <th class="">Proveedor</th>
+                            <th class="">% IVA</th>
+                            <th class="">Total Sin Iva</th>
+                            <th class="">Valor del Iva</th>
+                            <th class="">Total con Iva</th>
+
+                        </thead>
+                        <tbody id="tbody2"></tbody>
+                    </table>
+                </article>
+                <article>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion de reparacion:</label>
+                        <textarea type="text" id="textDescripcion" name="descripcion" required></textarea>
+                    </div>
+                </article>
+                <article>
+                    <div class="form-group">
+                        <label for="manoObra">Valor mano de obra:</label>
+                        <input type="text" id="textManoObra" name="manoObra" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idCliente">ID Cliente:</label>
+                        <input type="text" id="textidCliente" name="idCliente" required>
+                    </div>
+                    <div class="botonera--Dos">
+                        <button class="btnCeleste btnPrimary" id="btnConfirmar">Confirmar compra</button>
+                        <a href="ventaAdmin.html" class="btnRojo btnPrimary btnSinEtiqueta">Cancelar</a>
+                    </div>
+                </article>
+            </section>
+        </article>
+    </main> 
+    <script src="appAgregar.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+html{
+    font-size: 14px;
+}
+.table {
+    border-collapse: collapse;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(6px, 2vw, 1rem);
+    width: 80%;
+    max-height: 600px;
+    margin: 0 auto;
+    
+}
+
+
+.tableHead {
+    background-color: var(--white-primary); /* Color de fondo del encabezado */
+    color: var(--black-primary); /* Color del texto del encabezado */
+    width: 100%;
+}
+
+.tableHead  th {
+    padding: clamp(2px, 1vw, 10px);
+    text-align: left; /* Alineación del texto */
+    border-bottom: 2px solid #ddd; /* Línea inferior */
+    font-weight: bold; /* Texto en negrita */
+}
+.tableHead > tr > th {
+    text-align: center;
+}
+
+tbody{
+    color: var(--white-primary);
+    text-align: center;
+}
+td{
+    background-color: var(--black-primary);
+    width: auto;
+    height: 30px;
+    border: none;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 0;
+}
+
+.tableDiv{
+    width: 100%;
+    height: clamp(300px, 80vh, 680px);
+    scroll-behavior: smooth;
+}
+.tableDiv > div {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .table {
+        width: 98%;
+        border-collapse: collapse; /* Elimina espacios entre celdas */
+        overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
+        margin: 0 auto ;   
+    }
+}
