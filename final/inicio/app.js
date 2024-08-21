@@ -60,7 +60,7 @@ formulario.addEventListener("submit", async (event) => {
 
     // Validar el rol y redirigir según corresponda
     if (usuarioEncontrado.rol == "2") {
-        window.location.href = "../../final/venta/ventaAdmin.html";
+        window.location.href = "../../../proyectoBeta/final/venta/ventaAdmin.html";
 
     } else if (usuarioEncontrado.rol == "1") { 
         console.log("hola") 
